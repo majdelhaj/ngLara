@@ -1,0 +1,13 @@
+<form ng-controller="UserCtrl" ng-submit="addUser()">
+	
+    <input type="text" class="form-control" placeholder="Username" ng-model="newUser.username">
+    <br/>
+    <input type="text" class="form-control" placeholder="Name" ng-model="newUser.name">
+    <br/>
+    <input type="password" class="form-control" placeholder="Password" ng-model="newUser.password">
+    <br/>
+    <input type="submit" value="Add" class="btn btn-primary">
+    <input type="reset" value="Reset" class="btn">
+    <input ng-click="$hide()" type="button" value="Cancel" class="btn">
+
+</form>

@@ -1,0 +1,29 @@
+<button ng-href="" ng-click="showAddUserForm()" type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-plus"></span> Add User
+</button>
+
+<hr/>
+<table class="table" ng-init="getAllUsers()">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in usersList">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.role }}</td>
+            <td>
+                <button type="button" class="btn btn-default" ng-href="" ng-click="showEditUserForm(user.id)">
+                  <span class="glyphicon glyphicon-pencil"></span> Edit
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

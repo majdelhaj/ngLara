@@ -1,0 +1,12 @@
+<form ng-controller="UserCtrl" ng-submit="updateUser()">
+    
+    <input type="text" class="form-control" placeholder="Username" ng-model="user.username" disabled="disabled">
+    <br/>
+    <input type="text" class="form-control" placeholder="Name" ng-model="user.name">
+    <br/>
+    <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+    <br/>
+    <input type="submit" value="Edit" class="btn btn-primary">
+    <input ng-click="$hide()" type="button" value="Cancel" class="btn">
+
+</form>
